@@ -1,0 +1,10 @@
+3/26
+create a vite-react app:
+    npm create vite@latest in terminal, then follow the prompts
+
+create django app: "django-admin startproject backend"
+
+uploaded everything to github
+
+4/17
+resructured files for better organization
