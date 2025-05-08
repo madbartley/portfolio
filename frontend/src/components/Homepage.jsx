@@ -12,13 +12,20 @@ function Homepage() {
         images[i] = image.concat(second, dotjpg)
     }
 
+    const sleep = (ms = 0) => new Promise(resolve => setTimeout(resolve, ms));
 
+    async function delayedGreeting() {
+        await sleep(6000);
+        console.log("hello");
+      }
+      
+      delayedGreeting();
 
     return (
         <div className="image-container">
             <div className="flex-hp-images-container">
                 
-            {images.map((image, index) => <div className="flex-hp-image" key={index}><img src={images[index]} width="150px" height="225"></img></div>)}
+            {images.map((image, index) => <div className="flex-hp-image" key={index} id={"hp"+index}><img src={images[index]} width="150px" height="225"></img></div>)}
 
             </div>
         </div>
