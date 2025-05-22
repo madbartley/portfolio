@@ -3,6 +3,11 @@ body {
     /*width: 100vw;*/
 }
 
+#tester {
+    color: rgb(255, 63, 152);
+    z-index: 100;
+}
+
 .image-container {
     width: 100vw;
     height: 100vh;
