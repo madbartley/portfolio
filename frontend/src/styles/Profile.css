@@ -3,7 +3,7 @@
     height: 100vh;
     display: grid;
     grid-template-areas: 
-        "menu heading heading heading heading r-side"
+        "menu heading heading heading heading heading"
         "menu profile profile profile todo r-side"
         "menu items1 items2 items3 todo r-side"
         "menu blank blank blank blank r-side";
