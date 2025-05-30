@@ -1,4 +1,5 @@
 import '../styles/Homepage.css'
+import Title from '../components/Title.jsx'
 import { useEffect, useRef } from 'react';
 
 function Homepage() {
@@ -28,7 +29,6 @@ function Homepage() {
     }*/
 
 
-    startflipper(1);
 
     useEffect (() => {
         startflipper(1);
@@ -39,20 +39,38 @@ function Homepage() {
         }
     });
 
+    // flag to signal going up (true), and down (false)
+    var flag = true;
+    // image to be flipped
+    var picNum = Math.floor(Math.random() * (30));
+    startflipper(1, flag, picNum);
 
-    function startflipper(i) {
 
-        if(i > 10) {
-            i = 1;
+    // need a function to flip the card over: 1 over something getting bigger 
+    //function to replace card and flip the other way: 1 over that something going backwards to being 1
+
+    function startflipper(i, flag, picNum) {
+
+
+        if(i > 1 && flag == false) {
+            i--;
+        } else if (i < 10 && flag == true) {
+            i++;
+        }
+
+        if(i == 10) {
+            flag = false;
+            Math.trunc(picNum = Math.floor(Math.random() * (30)));
+        } else if(i == 1) {
+            flag = true;
         }
 
 
         requestAnimationFrame( function () {
 
-            myRefs.current[15].style.transform = `scaleX(${1/(i)})`;
+            myRefs.current[picNum].style.transform = `scaleX(${1/((0.2*((i-1)*(i-1))+1))})`;
             console.log("FIFTEEEEEEN");
-            i++;
-            startflipper(i);
+            startflipper(i, flag, picNum);
         });
 
     }
@@ -66,7 +84,7 @@ function Homepage() {
     return (
         
         <div className="image-container">
-            <h1 id="tester" ref={currImgRef}>TESTING FLIP</h1>
+            <Title name={"Madeline"}/>
             <div className="flex-hp-images-container">
 
             {/* Switched the id to be on the image itself, not the container */}  
