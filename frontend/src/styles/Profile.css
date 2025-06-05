@@ -3,71 +3,57 @@
     height: 100vh;
     display: grid;
     grid-template-areas: 
-        "menu heading heading heading heading heading"
-        "menu profile profile profile todo r-side"
-        "menu items1 items2 items3 todo r-side"
-        "menu blank blank blank blank r-side";
-    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
-    grid-template-columns: 20% 15% 15% 15% 25% 10%;
-    grid-template-rows: 10% 40% 35% 15%;
+        "menu heading heading  heading"
+        "menu profile todo r-side"
+        "menu items todo r-side"
+        "menu blank blank r-side";
+    grid-template-columns: 20% 640px 25% auto;
+    grid-template-rows: 10% 320px 35% auto;
 }
 
 .layout-element {
     background-color: rgb(199, 24, 24);
-    margin: 10px;
+    margin: 2px;
 }
 
 .profile-container > div.menu {
     background-color: rgb(199, 24, 24);
-    margin: 10px;
+    margin: 2px;
     grid-area: menu;
 }
 
 .profile-container > div.heading {
     background-color: rgb(199, 24, 24);
-    margin: 10px;
+    margin: 2px;
     grid-area: heading;
 }
 
 .profile-container > div.profile {
     background-color: rgb(199, 24, 24);
-    margin: 10px;
+    margin: 2px;
     grid-area: profile;
 }
 
-.profile-container > div.items1 {
+.profile-container > div.items {
     background-color: rgb(199, 24, 24);
-    margin: 10px;
-    grid-area: items1;
-}
-
-.profile-container > div.items2 {
-    background-color: rgb(199, 24, 24);
-    margin: 10px;
-    grid-area: items2;
-}
-
-.profile-container > div.items3 {
-    background-color: rgb(199, 24, 24);
-    margin: 10px;
-    grid-area: items3;
+    margin: 2px;
+    grid-area: items;
 }
 
 .profile-container > div.r-side {
     background-color: rgb(199, 24, 24);
-    margin: 10px;
+    margin: 2px;
     grid-area: r-side;
 }
 
 .profile-container > div.blank {
     background-color: rgb(199, 24, 24);
-    margin: 10px;
+    margin: 2px;
     grid-area: blank;
 }
 
 .profile-container > div.todo {
     background-color: rgb(199, 24, 24);
-    margin: 10px;
+    margin: 2px;
     grid-area: todo;
 }

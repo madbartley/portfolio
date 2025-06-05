@@ -1,0 +1,99 @@
+.mixed-project-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "menu-pop-out heading heading heading heading heading r-side"
+        "menu-pop-out main-image main-image main-image main-image updates r-side"
+        "menu-pop-out docs videos photos journals updates r-side"
+        "menu-pop-out blank blank blank blank updates r-side";
+    grid-template-columns: 5% 200px 200px 200px 200px 30% auto;
+    grid-template-rows: 50px 40% 40% auto;
+    /*align-items: center;*/
+}
+
+div {
+    color: white;
+}
+
+.mixed-project-container > div.menu-pop-out {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: menu-pop-out;
+}
+
+.mixed-project-container > div.main-image {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: main-image;
+    position: relative;
+    top: 20px;
+    left: 37.5%;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.mixed-project-container > div.docs {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: docs;
+    position: relative;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+}
+
+.mixed-project-container > div.videos {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: videos;
+    position: relative;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+}
+
+.mixed-project-container > div.photos {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: photos;
+    position: relative;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+}
+
+.mixed-project-container > div.journals {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: journals;
+    position: relative;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+}
+
+.mixed-project-container > div.updates {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: updates;
+}
+
+.mixed-project-container > div.heading {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: heading;
+}
+
+.mixed-project-container > div.r-side {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: r-side;
+}
+
+.mixed-project-container > div.blank {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: blank;
+}

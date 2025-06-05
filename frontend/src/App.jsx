@@ -5,6 +5,7 @@ import Title from './components/Title.jsx'
 import LeftMenu from './components/LeftMenu.jsx'
 import Homepage from './pages/Homepage.jsx'
 import Profile from './pages/Profile.jsx'
+import MixedProject from './pages/MixedProject.jsx';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path = "/" element = {<Homepage />} />
             <Route path = "/profile" element = {<Profile />} />
+            <Route path = "/mixed-project" element = {<MixedProject />} />
           </Routes>
         </BrowserRouter>
       </div>
