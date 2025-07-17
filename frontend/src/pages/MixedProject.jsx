@@ -42,12 +42,12 @@ function MixedProject() {
             <div className="menu-pop-out"><h3>menu pop out</h3></div>
             <div className="main-image"><h3>main image</h3></div>
             {/*The larger class element has a flex item inside it called docs-div that holds the actual moving stuff*/}
-            <div className="item-container">
+            {/* <div className="item-container"> */}
             <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><h3>docs</h3></div></div>
             <div className="vids" ref = {vids}><div id="vids-div" ref = {vidsElement}><h3>videos</h3></div></div>
             <div className="pics" ref = {pics}><div id="pics-div" ref = {picsElement}><h3>pictures</h3></div></div>
             <div className="journals" ref = {journals}><div id="journals-div" ref = {journalsElement}><h3>journals</h3></div></div>
-            </div>
+            {/* </div> */}
             <div className="updates"><h3>updates</h3></div>
             <div className="heading"><h3>heading</h3></div>
             <div className="r-side"><h3>r-side</h3></div>

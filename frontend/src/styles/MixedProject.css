@@ -5,7 +5,7 @@
     grid-template-areas: 
         "menu-pop-out heading heading heading heading heading r-side"
         "menu-pop-out main-image main-image main-image main-image updates r-side"
-        "menu-pop-out item-container item-container item-container item-container updates r-side"
+        "menu-pop-out docs vids pics journals updates r-side"
         "menu-pop-out blank blank blank blank updates r-side";
     grid-template-columns: 5% 200px 200px 200px 200px 30% auto;
     grid-template-rows: 50px 40% 40% auto;
@@ -24,7 +24,6 @@ div {
 
 .mixed-project-container > div.main-image {
     background-color: rgb(199, 24, 24);
-    margin: 2px;
     grid-area: main-image;
     position: relative;
     top: 20px;
@@ -35,8 +34,6 @@ div {
 }
 
 .item-container {
-    height: 100px;
-    width: 800px;
     background-color: rgb(24, 71, 199);
     display: flex;
     flex-direction: row;
@@ -44,53 +41,49 @@ div {
 
 .mixed-project-container > div.docs {
     background-color: rgb(199, 24, 24);
-    margin: 2px;
     grid-area: docs;
     position: relative;
     display: flex;
     align-items: center;
+    width: 100px;
+    height: 100px;
     left: 25%;
-    width: 105px;
-    height: 105px;
     z-index: 10;
 }
 
-.mixed-project-container > div.videos {
+.mixed-project-container > div.vids {
     background-color: rgb(199, 24, 24);
-    margin: 2px;
-    grid-area: videos;
+    grid-area: vids;
     position: relative;
     display: flex;
     align-items: center;
-    left: 25%;
     width: 100px;
     height: 100px;
+    left: 25%;
     z-index: 10;
 }
 
-.mixed-project-container > div.photos {
+.mixed-project-container > div.pics {
     background-color: rgb(199, 24, 24);
-    margin: 2px;
-    grid-area: photos;
+    grid-area: pics;
     position: relative;
     display: flex;
     align-items: center;
-    left: 25%;
     width: 100px;
     height: 100px;
+    left: 25%;
     z-index: 10;
 }
 
 .mixed-project-container > div.journals {
     background-color: rgb(199, 24, 24);
-    margin: 2px;
     grid-area: journals;
     position: relative;
     display: flex;
     align-items: center;
-    left: 25%;
     width: 100px;
     height: 100px;
+    left: 25%;
     z-index: 10;
 }
 
@@ -123,7 +116,6 @@ div {
 #docs-div {
     background-color: purple;
     position: relative;
-    top: 0px;
     width: 100px;
     height: 100px;
 }
