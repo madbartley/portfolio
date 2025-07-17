@@ -5,7 +5,7 @@
     grid-template-areas: 
         "menu-pop-out heading heading heading heading heading r-side"
         "menu-pop-out main-image main-image main-image main-image updates r-side"
-        "menu-pop-out docs videos photos journals updates r-side"
+        "menu-pop-out item-container item-container item-container item-container updates r-side"
         "menu-pop-out blank blank blank blank updates r-side";
     grid-template-columns: 5% 200px 200px 200px 200px 30% auto;
     grid-template-rows: 50px 40% 40% auto;
@@ -34,14 +34,25 @@ div {
     height: 200px;
 }
 
+.item-container {
+    height: 100px;
+    width: 800px;
+    background-color: rgb(24, 71, 199);
+    display: flex;
+    flex-direction: row;
+}
+
 .mixed-project-container > div.docs {
     background-color: rgb(199, 24, 24);
     margin: 2px;
     grid-area: docs;
     position: relative;
+    display: flex;
+    align-items: center;
     left: 25%;
-    width: 100px;
-    height: 100px;
+    width: 105px;
+    height: 105px;
+    z-index: 10;
 }
 
 .mixed-project-container > div.videos {
@@ -49,9 +60,12 @@ div {
     margin: 2px;
     grid-area: videos;
     position: relative;
+    display: flex;
+    align-items: center;
     left: 25%;
     width: 100px;
     height: 100px;
+    z-index: 10;
 }
 
 .mixed-project-container > div.photos {
@@ -59,9 +73,12 @@ div {
     margin: 2px;
     grid-area: photos;
     position: relative;
+    display: flex;
+    align-items: center;
     left: 25%;
     width: 100px;
     height: 100px;
+    z-index: 10;
 }
 
 .mixed-project-container > div.journals {
@@ -69,9 +86,12 @@ div {
     margin: 2px;
     grid-area: journals;
     position: relative;
+    display: flex;
+    align-items: center;
     left: 25%;
     width: 100px;
     height: 100px;
+    z-index: 10;
 }
 
 .mixed-project-container > div.updates {
@@ -96,4 +116,35 @@ div {
     background-color: rgb(199, 24, 24);
     margin: 2px;
     grid-area: blank;
+}
+
+/* moving elements */
+
+#docs-div {
+    background-color: purple;
+    position: relative;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+#vids-div {
+    background-color: purple;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+#pics-div {
+    background-color: purple;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+#journals-div {
+    background-color: purple;
+    position: relative;
+    width: 100px;
+    height: 100px;
 }
