@@ -21,19 +21,53 @@ function MixedProject() {
 
     // function to move the element up when user mouses over - MUST use the useEffect hook to ensure the component is mounted (ie not NULL) at the time this function is loaded
     useEffect (() => {
-        docs.current.addEventListener("mouseenter", function () {
+        docs.current.addEventListener("mouseenter", function (event) {
             console.log("HOVERING UP");
-            docsElement.current.style.top = '-100px';
+            doTheMove(docsElement);
+        });
+        vids.current.addEventListener("mouseenter", function (event) {
+            console.log("HOVERING UP");
+            doTheMove(vidsElement);
+        });
+        pics.current.addEventListener("mouseenter", function (event) {
+            console.log("HOVERING UP");
+            doTheMove(picsElement);
+        });
+        journals.current.addEventListener("mouseenter", function (event) {
+            console.log("HOVERING UP");
+            doTheMove(journalsElement);
         });
     }, []);
 
     // function to return the element to it's original position - MUST use the useEffect hook to ensure the component is mounted (ie not NULL) at the time this function is loaded
     useEffect (() => {
-        docs.current.addEventListener("mouseleave", function () {
+        docs.current.addEventListener("mouseleave", function (event) {
             console.log("RETURNING DOWN");
-            docsElement.current.style.top = '0px';
+            doTheMoveBack(docsElement);
+        });
+        vids.current.addEventListener("mouseleave", function (event) {
+            console.log("HOVERING UP");
+            doTheMoveBack(vidsElement);
+        });
+        pics.current.addEventListener("mouseleave", function (event) {
+            console.log("RETURNING DOWN");
+            doTheMoveBack(picsElement);
+        });
+        journals.current.addEventListener("mouseleave", function (event) {
+            console.log("HOVERING UP");
+            doTheMoveBack(journalsElement);
         });
     }, []);
+
+    // helper function to actually move the icon up
+    function doTheMove(theRef) {
+        theRef.current.style.top = '-100px';
+    }
+
+    // helper function to actually move the icon back
+    function doTheMoveBack(theRef) {
+        theRef.current.style.top = '0px';
+    }
 
 
 
