@@ -111,32 +111,44 @@ div {
     grid-area: blank;
 }
 
+/* for the words inside the pop-up squares */
+.inner-words {
+    font-size: 12px;
+    padding: 5px;
+}
+
 /* moving elements */
 
 #docs-div {
     background-color: purple;
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
+    z-index: 100;
 }
 
 #vids-div {
     background-color: purple;
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
+    z-index: 100;
+
 }
 
 #pics-div {
     background-color: purple;
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
+    z-index: 100;
+
 }
 
 #journals-div {
     background-color: purple;
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
+    z-index: 100;
 }
