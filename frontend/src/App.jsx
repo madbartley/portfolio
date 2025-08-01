@@ -1,8 +1,7 @@
 import './styles/App.css'
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Title from './components/Title.jsx'
-import LeftMenu from './components/LeftMenu.jsx'
+//import Title from './components/Title.jsx'
 import Homepage from './pages/Homepage.jsx'
 import Profile from './pages/Profile.jsx'
 import MixedProject from './pages/MixedProject.jsx';

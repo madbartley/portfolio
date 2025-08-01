@@ -1,4 +1,5 @@
 import '../styles/MixedProject.css'
+import PopOutMenu from '../components/PopOutMenu';
 
 import { useEffect, useRef } from 'react';
 
@@ -72,8 +73,8 @@ function MixedProject() {
 
     return (
         <div className="mixed-project-container">
-            <div className="menu-pop-out"><h3>menu pop out</h3></div>
-            <div className="main-image"><h3>main image</h3></div>
+            <div className="menu-pop-out"><h3>left side</h3></div>
+            <div className="main-image"><h3>main image</h3><div className="title">TITLE OF THE PROJECT</div></div>
             {/*The larger class element has a flex item inside it called docs-div that holds the actual moving stuff*/}
             {/* <div className="item-container"> */}
             <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><h3>docs</h3></div><div className="inner-words">View my documentation</div></div>

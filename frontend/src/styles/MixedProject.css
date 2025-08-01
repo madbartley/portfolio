@@ -3,12 +3,12 @@
     height: 100vh;
     display: grid;
     grid-template-areas: 
-        "menu-pop-out heading heading heading heading heading r-side"
+        "menu-pop-out heading heading heading heading heading heading"
         "menu-pop-out main-image main-image main-image main-image updates r-side"
         "menu-pop-out docs vids pics journals updates r-side"
         "menu-pop-out blank blank blank blank updates r-side";
-    grid-template-columns: 5% 200px 200px 200px 200px 30% auto;
-    grid-template-rows: 50px 40% 40% auto;
+    grid-template-columns: 12% 200px 200px 200px 200px 30% auto;
+    grid-template-rows: 75px 40% 40% auto;
     /*align-items: center;*/
 }
 
@@ -20,6 +20,8 @@ div {
     background-color: rgb(199, 24, 24);
     margin: 2px;
     grid-area: menu-pop-out;
+    /*width: 75px;*/
+    z-index: 100;
 }
 
 .mixed-project-container > div.main-image {
@@ -27,10 +29,22 @@ div {
     grid-area: main-image;
     position: relative;
     top: 20px;
-    left: 37.5%;
+    left: 100px;
     text-align: center;
-    width: 200px;
+    margin: 2px;
+    width: 600px;
     height: 200px;
+    
+}
+
+.title {
+    background-color: #e541e5;
+    color: #3d183d;
+    position: relative;
+    bottom: -75px;
+    right: -250px;
+    max-width: 300px;
+    overflow: hidden;
 }
 
 .item-container {
