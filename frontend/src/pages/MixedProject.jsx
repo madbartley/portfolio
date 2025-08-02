@@ -2,9 +2,11 @@ import '../styles/MixedProject.css'
 import PopOutMenu from '../components/PopOutMenu';
 import UpdatesWindow from '../components/UpdatesWindow';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function MixedProject() {
+    // defining state to swap everything out when a new project is selected
+    const [project, setProject] = useState(['Test'])
 
     // creating useRef variables, initialized to null, that will be grabbed by assigning "ref = {variable-name}" in the divs in the return section of component
     const docs = useRef(null);
@@ -75,7 +77,7 @@ function MixedProject() {
     return (
         <div className="mixed-project-container">
             <div className="menu-pop-out"><h3>left side</h3><PopOutMenu /></div>
-            <div className="main-image"><h3>main image</h3><div className="title">TITLE OF THE PROJECT</div></div>
+            <div className="main-image"><h3>main image</h3></div>
             {/*The larger class element has a flex item inside it called docs-div that holds the actual moving stuff*/}
             {/* <div className="item-container"> */}
             <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><h3>docs</h3></div><div className="inner-words">View my documentation</div></div>
@@ -83,8 +85,8 @@ function MixedProject() {
             <div className="pics" ref = {pics}><div id="pics-div" ref = {picsElement}><h3>pictures</h3></div><div className="inner-words">View my photo album</div></div>
             <div className="demo" ref = {demo}><div id="demo-div" ref = {demoElement}><h3>demo</h3></div><div className="inner-words">Demo this project</div></div>
             {/* </div> */}
-            <div className="updates"><h3>updates</h3><UpdatesWindow /></div>
-            <div className="heading"><h3>heading</h3></div>
+            <div className="updates"><h3>{project} updates</h3><UpdatesWindow /></div>
+            <div className="heading"><h3>{project}</h3></div>
             <div className="r-side"><h3>r-side</h3></div>
             <div className="blank"><h3>blank</h3></div>
         </div>

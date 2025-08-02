@@ -5,14 +5,18 @@ function UpdatesCard(props) {
     const postid = props.id;
     const post = props.post;
     const project = props.project;
-    const date = props.date;
+    const datetime = props.date;
+
+    let date=new Date(datetime).toDateString()
+    console.log(date)
+
+    console.log(postid);
 
     return(
         <div className="updates-container">
-            <div>{"POST ID: " + postid}</div>
-            <div>{"POST: " + post}</div>
-            <div>{"PROJECT: " + project}</div>
-            <div>{"DATE TIME: " + date}</div>
+            <div className="circle">M</div>
+            <div>{date}</div>
+            <div>{post}</div>
         </div>
     )
 }

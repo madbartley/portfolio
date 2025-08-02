@@ -11,17 +11,16 @@ function UpdatesWindow() {
   const [nextPage, setNextPage] = useState(null);
 
 
-  const fetchData = async (page) => {
+  const fetchData = async () => {
     try {
       // store the response in variable "response"
       const response = await axios(`http://127.0.0.1:8000/updates/?page=${page}`);
       // set state with the new response data
-      setData(response.data.results);
       setNextPage(response.data.next);
+      setData(data.concat(response.data.results));
       if(!response.data.next) {
         setHasMore(false);
       }
-      setData(data.concat(response.data.results));
       console.log("Data response: ", response.data);
     } catch (error) {
       console.log(error)
@@ -34,7 +33,7 @@ function UpdatesWindow() {
     useEffect(() => {
       
       (async () => {
-        await fetchData(page);
+        await fetchData();
         setPage(page+1);
         
       })();
@@ -49,9 +48,10 @@ function UpdatesWindow() {
       hasMore={hasMore}
       loader={<h4>loading...</h4>}
       height={550}
+      scrollThreshold={0.99}
       endMessage={
         <p style={{ textAlign: 'center' }}>
-          <b>Yay! You have seen it all</b>
+          <b>End</b>
         </p>
       }
     >

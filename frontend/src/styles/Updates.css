@@ -7,3 +7,10 @@
     margin: 2px;
     padding: 5px;
 }
+
+.circle {
+    background-color: #20e1b1;
+    border-radius: 50px;
+    width: 25px;
+    text-align: center;
+}
