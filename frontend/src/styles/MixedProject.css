@@ -5,9 +5,9 @@
     grid-template-areas: 
         "menu-pop-out heading heading heading heading heading heading"
         "menu-pop-out main-image main-image main-image main-image updates r-side"
-        "menu-pop-out docs vids pics journals updates r-side"
+        "menu-pop-out docs vids pics demo updates r-side"
         "menu-pop-out blank blank blank blank updates r-side";
-    grid-template-columns: 12% 200px 200px 200px 200px 30% auto;
+    grid-template-columns: 250px 200px 200px 200px 200px 425px auto;
     grid-template-rows: 75px 40% 40% auto;
     /*align-items: center;*/
 }
@@ -89,9 +89,9 @@ div {
     z-index: 10;
 }
 
-.mixed-project-container > div.journals {
+.mixed-project-container > div.demo {
     background-color: rgb(199, 24, 24);
-    grid-area: journals;
+    grid-area: demo;
     position: relative;
     display: flex;
     align-items: center;
@@ -159,7 +159,7 @@ div {
 
 }
 
-#journals-div {
+#demo-div {
     background-color: purple;
     position: absolute;
     width: 100px;

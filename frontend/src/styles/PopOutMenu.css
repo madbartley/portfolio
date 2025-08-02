@@ -1,10 +1,21 @@
 
 
-#pop-out-menu {
+/*#pop-out-menu {
     position: fixed;
     left: 0;
     top: 0;
     transform: translate3d(-100vw, 0, 0);
          
     width: 100vw;
+}*/
+
+.menu-container {
+    background-color: #05332d;
+    padding: 15px;
+}
+
+.project-link {
+    color: #4fe1d0;
+    background-color: #05332d;
+    margin: 15px;
 }

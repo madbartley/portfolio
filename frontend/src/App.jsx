@@ -1,4 +1,7 @@
+
 import './styles/App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //import Title from './components/Title.jsx'

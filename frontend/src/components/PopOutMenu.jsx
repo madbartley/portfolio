@@ -1,28 +1,52 @@
 import '../styles/PopOutMenu.css'
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
-import React, { useState } from 'react';
-import SlidingPanel from 'react-sliding-side-panel';
-import 'react-sliding-side-panel/lib/index.css';
+// import React, { useState } from 'react';
+
+import Accordion from 'react-bootstrap/Accordion';
 
 function PopOutMenu() {
-    // state for the sliding menu panel
-    const [openPanel, setOpenPanel] = useState(false);
   return (
-    <div>
-      <div>
-        <button onClick={() => setOpenPanel(true)}>Open</button>
-      </div>
-      <SlidingPanel
-        type={'left'}
-        isOpen={openPanel}
-        size={15}
-      >
-        <div>
-          <div>My Panel Content</div>
-          <button onClick={() => setOpenPanel(false)}>close</button>
-        </div>
-      </SlidingPanel>
-    </div>
+    <Accordion flush>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>About</Accordion.Header>
+        <Accordion.Body>
+          <div className = "menu-container">
+          <div>Profile</div>
+          </div>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Web and mobile development</Accordion.Header>
+        <Accordion.Body>
+          <div className = "menu-container">
+          <div>Project 1</div>
+          <div>Project 2</div>
+          <div>Project 3</div>
+          </div>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>Robotics and embedded systems</Accordion.Header>
+        <Accordion.Body>
+          <div className = "menu-container">
+          <div>Project 1</div>
+          <div>Project 2</div>
+          <div>Project 3</div>
+          </div>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>Data science and machine learning</Accordion.Header>
+        <Accordion.Body>
+          <div className = "menu-container">
+          <div>Project 1</div>
+          <div>Project 2</div>
+          <div>Project 3</div>
+          </div>
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
   );
 }
 
