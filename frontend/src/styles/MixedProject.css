@@ -5,7 +5,7 @@
     grid-template-areas: 
         "heading heading heading heading heading heading heading"
         "menu-pop-out main-image main-image main-image main-image updates r-side"
-        "menu-pop-out docs vids pics demo updates r-side"
+        "menu-pop-out pop-ups pop-ups pop-ups pop-ups updates r-side"
         "menu-pop-out project project project project updates r-side"
         "menu-pop-out blank blank blank blank blank r-side";
     grid-template-columns: 250px 200px 200px 200px 200px 425px auto;
@@ -23,6 +23,12 @@ div {
     z-index: 100;
 }
 
+.mixed-project-container > div.pop-ups {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: pop-ups;
+}
+
 .mixed-project-container > div.main-image {
     background-color: rgb(199, 24, 24);
     grid-area: main-image;
@@ -34,67 +40,56 @@ div {
     
 }
 
-.title {
-    background-color: #e541e5;
-    color: #3d183d;
-    position: relative;
-    bottom: -75px;
-    right: -250px;
-    max-width: 300px;
-    overflow: hidden;
-}
-
 .item-container {
-    background-color: rgb(24, 71, 199);
+    background-color: rgb(199, 24, 24);
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 796px;
+    height: 96px;
 }
 
-.mixed-project-container > div.docs {
+.item-container > div.docs {
     background-color: rgb(0, 0, 0);
     grid-area: docs;
     position: relative;
     display: flex;
     align-items: center;
     width: 100px;
-    height: 100px;
-    left: 25%;
+    height: 96px;
     z-index: 10;
 }
 
-.mixed-project-container > div.vids {
-    background-color: rgb(199, 24, 24);
+.item-container > div.vids {
+    background-color: rgb(0, 0, 0);
     grid-area: vids;
     position: relative;
     display: flex;
     align-items: center;
     width: 100px;
-    height: 100px;
-    left: 25%;
+    height: 96px;
     z-index: 10;
 }
 
-.mixed-project-container > div.pics {
-    background-color: rgb(199, 24, 24);
+.item-container > div.pics {
+    background-color: rgb(0, 0, 0);
     grid-area: pics;
     position: relative;
     display: flex;
     align-items: center;
     width: 100px;
-    height: 100px;
-    left: 25%;
+    height: 96px;
     z-index: 10;
 }
 
-.mixed-project-container > div.demo {
-    background-color: rgb(199, 24, 24);
+.item-container > div.demo {
+    background-color: rgb(0, 0, 0);
     grid-area: demo;
     position: relative;
     display: flex;
     align-items: center;
     width: 100px;
-    height: 100px;
-    left: 25%;
+    height: 96px;
     z-index: 10;
 }
 
@@ -133,6 +128,8 @@ div {
     font-size: 12px;
     padding: 5px;
     background-color: black;
+    width: 100px;
+    text-align: center;
 }
 
 /* moving elements */
@@ -140,32 +137,32 @@ div {
     background-color: rgb(199, 24, 24);
     position: absolute;
     width: 100px;
-    height: 100px;
+    height: 96px;
     z-index: 100;
 }
 
 #vids-div {
-    background-color: purple;
+    background-color: rgb(199, 24, 24);
     position: absolute;
     width: 100px;
-    height: 100px;
+    height: 96px;
     z-index: 100;
 
 }
 
 #pics-div {
-    background-color: purple;
+    background-color: rgb(199, 24, 24);
     position: absolute;
     width: 100px;
-    height: 100px;
+    height: 96px;
     z-index: 100;
 
 }
 
 #demo-div {
-    background-color: purple;
+    background-color: rgb(199, 24, 24);
     position: absolute;
     width: 100px;
-    height: 100px;
+    height: 96px;
     z-index: 100;
 }
