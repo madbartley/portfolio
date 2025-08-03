@@ -79,6 +79,7 @@ function MixedProject() {
         <div className="mixed-project-container">
             <div className="menu-pop-out"><h3>left side</h3><PopOutMenu /></div>
             <div className="main-image"><h3>main image</h3></div>
+            <div className="project"><div id="project-title">{project}</div><div id="description">This is where I will write about my project!</div></div>
             {/*The larger class element has a flex item inside it called docs-div that holds the actual moving stuff*/}
             {/* <div className="item-container"> */}
             <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><h3>docs</h3></div><div className="inner-words">View my documentation</div></div>

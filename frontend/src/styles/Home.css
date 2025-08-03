@@ -61,7 +61,7 @@ body {
 }
 
 #title {
-    color: #CC2936;
+    color: #023C45;
     font-size: 120px;
     position: absolute;
     bottom: 55px;
@@ -74,7 +74,7 @@ body {
 
 #tagline {
     font-size: 25px;
-    color: #CC2936;
+    color: #023C45;
     position: absolute;
     white-space: nowrap;
     overflow: hidden;

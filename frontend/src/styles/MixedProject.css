@@ -7,9 +7,10 @@
         "menu-pop-out main-image main-image main-image main-image updates r-side"
         "menu-pop-out docs vids pics demo updates r-side"
         "menu-pop-out docs vids pics demo updates r-side"
+        "menu-pop-out project project project project updates r-side"
         "menu-pop-out blank blank blank blank updates r-side";
     grid-template-columns: 250px 200px 200px 200px 200px 425px auto;
-    grid-template-rows: 75px 40% 40% auto;
+    grid-template-rows: 75px 40% 12% 12% 20% auto;
 }
 
 div {
@@ -20,7 +21,6 @@ div {
     background-color: rgb(199, 24, 24);
     margin: 2px;
     grid-area: menu-pop-out;
-    /*width: 75px;*/
     z-index: 100;
 }
 
@@ -123,6 +123,12 @@ div {
     background-color: rgb(199, 24, 24);
     margin: 2px;
     grid-area: blank;
+}
+
+.mixed-project-container > div.project {
+    background-color: rgb(199, 24, 24);
+    margin: 2px;
+    grid-area: project;
 }
 
 /* for the words inside the pop-up squares */
