@@ -3,13 +3,13 @@
     height: 100vh;
     display: grid;
     grid-template-areas: 
-        "menu-pop-out heading heading heading heading heading heading"
+        "heading heading heading heading heading heading heading"
         "menu-pop-out main-image main-image main-image main-image updates r-side"
+        "menu-pop-out docs vids pics demo updates r-side"
         "menu-pop-out docs vids pics demo updates r-side"
         "menu-pop-out blank blank blank blank updates r-side";
     grid-template-columns: 250px 200px 200px 200px 200px 425px auto;
     grid-template-rows: 75px 40% 40% auto;
-    /*align-items: center;*/
 }
 
 div {

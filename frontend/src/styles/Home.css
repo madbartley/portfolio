@@ -1,0 +1,110 @@
+.home-container {
+    max-width: 98vw;
+    height: 100vh;
+    text-overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+        "top-blank top-blank top-blank"
+        "left top-scroll right"
+        "left main-image right"
+        "left bottom-scroll right"
+        "left lower right";
+    grid-template-columns: 218px 1100px 218px;
+    grid-template-rows: 55px 60px 460px 60px auto; /*change 800px to 'auto' to make it exactly one page*/
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    overflow: hidden;
+}
+
+.home-container > div.left {
+    background-color: #023C45;
+    grid-area: left;
+    max-width: 250px;
+    margin-left: 0px;
+    z-index: 5;
+}
+
+.home-container > div.right {
+    background-color: #023C45;
+    grid-area: right;
+    margin-right: 0px;
+    z-index: 5;
+}
+
+.home-container > div.top-scroll {
+    background-color: #20E1B1;
+    grid-area: top-scroll;
+    text-overflow: hidden;
+}
+.home-container > div.bottom-scroll {
+    background-color: #20E1B1;
+    grid-area: bottom-scroll;
+    overflow: hidden;
+}
+
+.home-container > div.main-image {
+    background-color: #20E1B1;
+    grid-area: main-image;
+}
+
+.home-container > div.top-blank {
+    background-color: #023C45;
+    grid-area: top-blank;
+}
+
+.home-container > div.lower {
+    background-color: #023C45;
+    grid-area: lower;
+}
+
+#title {
+    color: #CC2936;
+    font-size: 120px;
+    position: absolute;
+    bottom: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: hidden;
+    animation: Left 20s infinite linear;
+    padding-bottom: 10px;
+}
+
+#tagline {
+    font-size: 25px;
+    color: #CC2936;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: hidden;
+    animation: Right 35s infinite linear;
+    padding-bottom: 10px;
+}
+
+.nav {
+    background-color: #023C45;
+}
+ 
+@keyframes Left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-1000px);
+    }
+}
+
+@keyframes Right {
+    from {
+        transform: translateX(-995px);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+
+

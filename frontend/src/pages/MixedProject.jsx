@@ -1,6 +1,7 @@
 import '../styles/MixedProject.css'
 import PopOutMenu from '../components/PopOutMenu';
 import UpdatesWindow from '../components/UpdatesWindow';
+import TopNav from '../components/TopNav'
 
 import { useEffect, useRef, useState } from 'react';
 
@@ -86,7 +87,7 @@ function MixedProject() {
             <div className="demo" ref = {demo}><div id="demo-div" ref = {demoElement}><h3>demo</h3></div><div className="inner-words">Demo this project</div></div>
             {/* </div> */}
             <div className="updates"><h3>{project} updates</h3><UpdatesWindow /></div>
-            <div className="heading"><h3>{project}</h3></div>
+            <div className="heading"><h3><TopNav /></h3></div>
             <div className="r-side"><h3>r-side</h3></div>
             <div className="blank"><h3>blank</h3></div>
         </div>
