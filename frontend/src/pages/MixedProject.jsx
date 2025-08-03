@@ -3,7 +3,11 @@ import PopOutMenu from '../components/PopOutMenu';
 import UpdatesWindow from '../components/UpdatesWindow';
 import TopNav from '../components/TopNav'
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState} from 'react';
+import { createContext } from "react";
+import ReactDOM from "react-dom/client";
+
+const ProjectContext = createContext("Profile");
 
 function MixedProject() {
     // defining state to swap everything out when a new project is selected
@@ -66,7 +70,7 @@ function MixedProject() {
 
     // helper function to actually move the icon up
     function doTheMove(theRef) {
-        theRef.current.style.top = '-100px';
+        theRef.current.style.top = '-105px';
     }
 
     // helper function to actually move the icon back
@@ -77,20 +81,20 @@ function MixedProject() {
 
     return (
         <div className="mixed-project-container">
-            <div className="menu-pop-out"><h3>left side</h3><PopOutMenu /></div>
+            <ProjectContext.Provider value={project}>
+            <div className="menu-pop-out"><PopOutMenu /></div>
             <div className="main-image"><h3>main image</h3></div>
             <div className="project"><div id="project-title">{project}</div><div id="description">This is where I will write about my project!</div></div>
             {/*The larger class element has a flex item inside it called docs-div that holds the actual moving stuff*/}
-            {/* <div className="item-container"> */}
             <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><h3>docs</h3></div><div className="inner-words">View my documentation</div></div>
             <div className="vids" ref = {vids}><div id="vids-div" ref = {vidsElement}><h3>videos</h3></div><div className="inner-words">Browse videos related to this project</div></div>
             <div className="pics" ref = {pics}><div id="pics-div" ref = {picsElement}><h3>pictures</h3></div><div className="inner-words">View my photo album</div></div>
             <div className="demo" ref = {demo}><div id="demo-div" ref = {demoElement}><h3>demo</h3></div><div className="inner-words">Demo this project</div></div>
-            {/* </div> */}
             <div className="updates"><h3>{project} updates</h3><UpdatesWindow /></div>
             <div className="heading"><h3><TopNav /></h3></div>
             <div className="r-side"><h3>r-side</h3></div>
             <div className="blank"><h3>blank</h3></div>
+            </ProjectContext.Provider>
         </div>
     )
     

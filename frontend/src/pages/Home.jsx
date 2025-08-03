@@ -3,7 +3,9 @@ import PopOutMenu from '../components/PopOutMenu.jsx'
 import TopNav from '../components/TopNav'
 import { useEffect, useRef } from 'react';
 
+
 function Home() {
+    
 return (
         
         <div className="home-container">

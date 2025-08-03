@@ -69,7 +69,7 @@ body {
     overflow: hidden;
     text-overflow: hidden;
     animation: Left 20s infinite linear;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 #tagline {

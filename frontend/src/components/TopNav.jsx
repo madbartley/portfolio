@@ -10,8 +10,8 @@ const TopNav = () => {
         <Navbar className = "nav" data-bs-theme="dark">
         <Container>
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">About</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/mixed-project">Profile</Nav.Link>
             <Nav.Link href="#pricing">Contact</Nav.Link>
           </Nav>
         </Container>

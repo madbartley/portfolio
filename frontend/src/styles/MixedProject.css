@@ -6,11 +6,10 @@
         "heading heading heading heading heading heading heading"
         "menu-pop-out main-image main-image main-image main-image updates r-side"
         "menu-pop-out docs vids pics demo updates r-side"
-        "menu-pop-out docs vids pics demo updates r-side"
         "menu-pop-out project project project project updates r-side"
-        "menu-pop-out blank blank blank blank updates r-side";
+        "menu-pop-out blank blank blank blank blank r-side";
     grid-template-columns: 250px 200px 200px 200px 200px 425px auto;
-    grid-template-rows: 75px 40% 12% 12% 20% auto;
+    grid-template-rows: 75px 300px 100px 200px auto; /*go back to make TopNav 55px height like the home page*/
 }
 
 div {
@@ -28,12 +27,10 @@ div {
     background-color: rgb(199, 24, 24);
     grid-area: main-image;
     position: relative;
-    top: 20px;
-    left: 100px;
     text-align: center;
     margin: 2px;
-    width: 600px;
-    height: 200px;
+    width: 796px;
+    /*height: 250px;*/
     
 }
 
@@ -54,7 +51,7 @@ div {
 }
 
 .mixed-project-container > div.docs {
-    background-color: rgb(199, 24, 24);
+    background-color: rgb(0, 0, 0);
     grid-area: docs;
     position: relative;
     display: flex;
@@ -135,12 +132,12 @@ div {
 .inner-words {
     font-size: 12px;
     padding: 5px;
+    background-color: black;
 }
 
 /* moving elements */
-
 #docs-div {
-    background-color: purple;
+    background-color: rgb(199, 24, 24);
     position: absolute;
     width: 100px;
     height: 100px;
