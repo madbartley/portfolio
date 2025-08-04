@@ -8,6 +8,8 @@ import Home from './pages/Home.jsx'
 import Profile from './pages/Profile.jsx'
 import MixedProject from './pages/MixedProject.jsx';
 
+
+
 function App() {
 
   return (
@@ -17,7 +19,7 @@ function App() {
           <Routes>
             <Route path = "/" element = {<Home />} />
             <Route path = "/profile" element = {<Profile />} />
-            <Route path = "/mixed-project" element = {<MixedProject />} />
+            <Route path = "/mixed-project" element = {<MixedProject project />} />
           </Routes>
         </BrowserRouter>
       </div>

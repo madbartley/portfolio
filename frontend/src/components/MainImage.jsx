@@ -1,12 +1,10 @@
 import '../styles/MixedProject.css'
-import { useState, createContext } from "react";
 
-
-const MainImage = () => {
+const MainImage = (props) => {
 
     return (
         <div>
-        <div className="main-image"><h3>main image</h3></div>
+        <div className="main-image"><h3>main image for {props.project}</h3></div>
         </div>
     )
 }

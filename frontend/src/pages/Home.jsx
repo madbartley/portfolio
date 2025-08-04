@@ -2,6 +2,7 @@ import '../styles/Home.css'
 import PopOutMenu from '../components/PopOutMenu.jsx'
 import TopNav from '../components/TopNav'
 import { useEffect, useRef } from 'react';
+import { useState, createContext, useContext } from "react";
 
 
 function Home() {

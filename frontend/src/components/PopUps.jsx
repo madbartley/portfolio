@@ -2,8 +2,7 @@ import '../styles/MixedProject.css'
 
 import { useEffect, useRef, useState} from 'react';
 
-
-const PopUps = () => {
+const PopUps = (props) => {
 
     // creating useRef variables, initialized to null, that will be grabbed by assigning "ref = {variable-name}" in the divs in the return section of component
     const docs = useRef(null);
@@ -74,7 +73,7 @@ const PopUps = () => {
     return (
         <div className="item-container">
         {/*The larger class element has a flex item inside it called docs-div that holds the actual moving stuff*/}
-            <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><h3>docs</h3></div><div className="inner-words">View my documentation</div></div>
+            <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><h3>docs</h3></div><div className="inner-words">docs for {props.project}</div></div>
             <div className="vids" ref = {vids}><div id="vids-div" ref = {vidsElement}><h3>videos</h3></div><div className="inner-words">Browse videos related to this project</div></div>
             <div className="pics" ref = {pics}><div id="pics-div" ref = {picsElement}><h3>pictures</h3></div><div className="inner-words">View my photo album</div></div>
             <div className="demo" ref = {demo}><div id="demo-div" ref = {demoElement}><h3>demo</h3></div><div className="inner-words">Demo this project</div></div>

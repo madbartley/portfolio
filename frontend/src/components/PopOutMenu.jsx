@@ -2,8 +2,6 @@ import '../styles/PopOutMenu.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-// import React, { useState } from 'react';
-
 import Accordion from 'react-bootstrap/Accordion';
 
 function PopOutMenu() {
