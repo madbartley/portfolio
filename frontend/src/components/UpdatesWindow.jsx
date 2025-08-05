@@ -54,7 +54,7 @@ function UpdatesWindow(props) {
       scrollThreshold={0.1}
       endMessage={
         <p style={{ textAlign: 'center' }}>
-          <b>End for {props.projectName}</b>
+          <b>End for {props.project}</b>
         </p>
       }
     >

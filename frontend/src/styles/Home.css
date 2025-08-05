@@ -16,7 +16,7 @@
 body {
     background-color: rgb(0, 0, 0);
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden; /* turn this off, the overflow up above, and the mixed-project css vh to get a single page view again*/
 }
 
 .home-container > div.left {
@@ -58,6 +58,30 @@ body {
 .home-container > div.lower {
     background-color: #023C45;
     grid-area: lower;
+}
+
+.featured {
+    
+}
+
+.profile-home {
+    
+}
+
+#decor {
+    background-color: #023C45;
+    width: 150px;
+    padding: 5px;
+    padding-right: 15px;
+    position: absolute;
+    left: 350px;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #20E1B1;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #title {

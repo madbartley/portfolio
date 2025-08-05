@@ -10,13 +10,13 @@ import Description from '../components/Description';
 import SlideUp from '../components/SlideUp';
 
 
-
 import { useState,} from 'react';
 
 
 function MixedProject() {
+
     // defining state to swap everything out when a new project is selected
-    const [project, setProject] = useState('Profile');
+    const [project, setProject] = useState("Profile");
 
     // set state to Profile
     function setProfile() {

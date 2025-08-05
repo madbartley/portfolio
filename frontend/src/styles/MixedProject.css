@@ -1,7 +1,7 @@
 .mixed-project-container {
     background-color: #023C45; /*    background-color: #023C45;*/
     width: 100vw;
-    height: 100vh;
+    height: 120vh; /**/
     display: grid;
     grid-template-areas: 
         "heading heading heading heading heading heading heading"
@@ -11,13 +11,16 @@
         "a-side menu-pop-out m-side project l-side updates r-side"
         "blank blank blank blank blank blank blank";
     grid-template-columns: auto 250px auto 800px auto 425px auto;
-    grid-template-rows: 55px 60px 300px 75px 175px auto; /*go back to make TopNav 55px height like the home page*/
+    grid-template-rows: 55px 60px 300px 75px 175px 100px; /*go back to make TopNav 55px height like the home page*/
 }
 
 
 .mixed-project-container > div.menu-pop-out {
-    background-color: #023C45;
+    /*background-color: #023C45;*/
     grid-area: menu-pop-out;
+    background-color: rgba(255,255,255,10%);
+    border-radius: 5px;
+
 }
 
 .mixed-project-container > div.pop-ups {
@@ -30,18 +33,20 @@
     grid-area: main-image;
     margin: 18px;
     width: 760px;    
-    border: solid 2px #f6511d;
+    /*border: solid 2px #f6511d;*/
 }
 
 .mixed-project-container > div.main-title {
-    background-color: #023C45;
+    background-color: rgba(255,255,255,10%);
     grid-area: main-title;
-    color: #f6511d;
+    color: #20E1B1;
     font-size: 36px;
     font-weight: 600;
     padding: 5px;
     padding-left: 15px;
     line-height: 50px;
+    width: 796px;
+    border-radius: 5px;
 }
 
 .item-container {
@@ -102,10 +107,10 @@
 }
 
 .mixed-project-container > div.updates {
-    background-color: #defff7;
+    background-color: rgba(255,255,255,10%);
     grid-area: updates;
     color: #defff7;
-    border: solid 2px #defff7;
+    /*border: solid 2px #defff7;*/
     border-radius: 5px;
 }
 
@@ -143,25 +148,24 @@
     background-color: #023C45;
     /*margin: 2px;*/
     grid-area: blank;
+    max-height: 100px;
 }
 
 .mixed-project-container > div.project {
     background-color: #defff7;
     color: #023C45;
-    margin: 5px;
+    margin: 2px;
     grid-area: project;
-    border: solid 6px #defff7;
     border-radius: 5px;
 }
 
 .inner-description {
     background-color: #ffffff;
-    border: solid 2px #023C45;
     border-radius: 5px;
     padding: 5px;
     padding-left: 10px;
-    height: 153px;
-    width: 778px;
+    height: 171px;
+    width: 796px;
 }
 
 .menu-container {
@@ -222,7 +226,11 @@
 #updates-title {
     padding-left: 6px;
     font-size: 22px;
-    color: #023C45;
+    color: #20E1B1;
+}
+
+#project-title {
+    color: #1aa784;
 }
 
 #slider-button {

@@ -76,10 +76,10 @@ const PopUps = (props) => {
     return (
         <div className="item-container">
         {/*The larger class element has a flex item inside it called docs-div that holds the actual moving stuff*/}
-            <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><img className="icons" src="../../src/assets/popup-icons/doc.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Docs for this project"} project={props.project} poptype={"documents"}/></div></div>
-            <div className="vids" ref = {vids}><div id="vids-div" ref = {vidsElement}><img className="icons" src="../../src/assets/popup-icons/video.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Browse related videos"} project={props.project} poptype={"videos"}/></div></div>
-            <div className="pics" ref = {pics}><div id="pics-div" ref = {picsElement}><img className="icons" src="../../src/assets/popup-icons/photo.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"View photos"} project={props.project} poptype={"photos"}/></div></div>
-            <div className="demo" ref = {demo}><div id="demo-div" ref = {demoElement}><img className="icons" src="../../src/assets/popup-icons/demo.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Watch a demo"} project={props.project} poptype={"demo"}/></div></div>
+            <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><img className="icons" src="../../src/assets/popup-icons/docs.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Docs for this project"} project={props.project} poptype={"documents"}/></div></div>
+            <div className="vids" ref = {vids}><div id="vids-div" ref = {vidsElement}><img className="icons" src="../../src/assets/popup-icons/videos.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Browse related videos"} project={props.project} poptype={"videos"}/></div></div>
+            <div className="pics" ref = {pics}><div id="pics-div" ref = {picsElement}><img className="icons" src="../../src/assets/popup-icons/photos.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"View photos"} project={props.project} poptype={"photos"}/></div></div>
+            <div className="demo" ref = {demo}><div id="demo-div" ref = {demoElement}><img className="icons" src="../../src/assets/popup-icons/demos.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Watch a demo"} project={props.project} poptype={"demo"}/></div></div>
             </div>
     )
 }
