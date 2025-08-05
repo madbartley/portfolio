@@ -1,29 +1,31 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import Accordion from 'react-bootstrap/Accordion';
 import '../styles/MixedProject.css'
-import PopOutMenu from '../components/PopOutMenu';
 import UpdatesWindow from '../components/UpdatesWindow';
+import UpdatesCard from '../components/UpdatesCard';
 import TopNav from '../components/TopNav'
 import PopUps from '../components/PopUps';
 import MainImage from '../components/MainImage';
 import Description from '../components/Description';
+import SlideUp from '../components/SlideUp';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Accordion from 'react-bootstrap/Accordion';
+
 
 import { useState,} from 'react';
 
 
 function MixedProject() {
     // defining state to swap everything out when a new project is selected
-    const [project, setProject] = useState('profile');
+    const [project, setProject] = useState('Profile');
 
     // set state to Profile
     function setProfile() {
-        setProject("profile");
+        setProject("Profile");
     }
 
     // set state to Profile
     function setPortfolio() {
-        setProject("portfolio website");
+        setProject("Portfolio website");
     }
 
     // set state to LowPressure app
@@ -41,11 +43,9 @@ function MixedProject() {
         setProject("Coming soon");
     }
 
-
     return (
         <div className="mixed-project-container">
             <div className="menu-pop-out">
-                
                 <Accordion flush>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>About</Accordion.Header>
@@ -81,15 +81,18 @@ function MixedProject() {
                     </Accordion.Body>
                 </Accordion.Item>
                 </Accordion>
-
             </div>
+            <div className="main-title">{project}</div>
             <div className="main-image"><MainImage project = {project}/></div>
             <div className="project"><Description project = {project}/></div>
             <div className="pop-ups"><PopUps project = {project}/></div>
-            <div className="updates"><h3>{project} updates</h3><UpdatesWindow project = {project}/></div>
-            <div className="heading"><h3><TopNav /></h3></div>
-            <div className="r-side"><h3>r-side</h3></div>
-            <div className="blank"><h3>blank</h3></div>
+            <div className="updates"><div className="inner-updates"><div id="updates-title">Related updates</div><UpdatesWindow project = {project}/></div></div>
+            <div className="heading"><TopNav /></div>
+            <div className="r-side"></div>
+            <div className="blank"></div>
+            <div className="l-side"></div>
+            <div className="m-side"></div>
+            <div className="a-side"><SlideUp /></div>
         </div>
     )
     

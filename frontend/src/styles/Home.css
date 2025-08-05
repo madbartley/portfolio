@@ -68,7 +68,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: hidden;
-    animation: Left 20s infinite linear;
+    animation: Left 30s infinite linear;
     padding-bottom: 12px;
 }
 
@@ -79,7 +79,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: hidden;
-    animation: Right 35s infinite linear;
+    animation: Right 60s infinite linear;
     padding-bottom: 10px;
 }
 
@@ -103,6 +103,20 @@ body {
     to {
         transform: translateX(0%);
     }
+}
+
+#madeline-logo {
+    position: absolute;
+    left: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#madeline-email {
+    color: #DEFFF7;
+    position: relative;
+    bottom: -4px;
 }
 
 

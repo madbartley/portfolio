@@ -17,15 +17,15 @@ function UpdatesCard(props) {
     console.log("Project from db: ", project);
     console.log("Project from state: ", project_name);
 
-    if(project === project_name ){
+   if (project === project_name ){
 
-    return(
-        <div className="updates-container">
-            <div className="circle">M</div>
-            <div>{date}</div>
-            <div>{post}</div>
-        </div>
-    )
+        return(
+            <div className="updates-container">
+                <div className="top-card"><img src="../../src/assets/mb-logo.svg" height='30px'></img>
+                <div className='date'>{date}</div></div>
+                <div>{post}</div>
+            </div>
+        )
     }
 }
 

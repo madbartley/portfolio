@@ -1,168 +1,230 @@
 .mixed-project-container {
+    background-color: #023C45; /*    background-color: #023C45;*/
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-areas: 
-        "heading heading heading heading"
-        "menu-pop-out main-image updates r-side"
-        "menu-pop-out pop-ups updates r-side"
-        "menu-pop-out project updates r-side"
-        "menu-pop-out blank blank r-side";
-    grid-template-columns: 250px 800px 425px auto;
-    grid-template-rows: 75px 300px 100px 200px auto; /*go back to make TopNav 55px height like the home page*/
+        "heading heading heading heading heading heading heading"
+        "a-side menu-pop-out m-side main-title l-side updates r-side"
+        "a-side menu-pop-out m-side main-image l-side updates r-side"
+        "a-side menu-pop-out m-side pop-ups l-side updates r-side"
+        "a-side menu-pop-out m-side project l-side updates r-side"
+        "blank blank blank blank blank blank blank";
+    grid-template-columns: auto 250px auto 800px auto 425px auto;
+    grid-template-rows: 55px 60px 300px 75px 175px auto; /*go back to make TopNav 55px height like the home page*/
 }
 
-div {
-    color: white;
-}
 
 .mixed-project-container > div.menu-pop-out {
-    background-color: rgb(199, 24, 24);
-    margin: 2px;
+    background-color: #023C45;
     grid-area: menu-pop-out;
-    z-index: 100;
 }
 
 .mixed-project-container > div.pop-ups {
-    background-color: rgb(199, 24, 24);
-    margin: 2px;
+    background-color: #023C45;
     grid-area: pop-ups;
 }
 
 .mixed-project-container > div.main-image {
-    background-color: rgb(199, 24, 24);
+    background-color: #023C45;
     grid-area: main-image;
-    position: relative;
-    text-align: center;
-    margin: 2px;
-    width: 796px;
-    /*height: 250px;*/
-    
+    margin: 18px;
+    width: 760px;    
+    border: solid 2px #f6511d;
+}
+
+.mixed-project-container > div.main-title {
+    background-color: #023C45;
+    grid-area: main-title;
+    color: #f6511d;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 5px;
+    padding-left: 15px;
+    line-height: 50px;
 }
 
 .item-container {
-    background-color: rgb(199, 24, 24);
+    background-color: #023C45;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 796px;
-    height: 96px;
+    height: 75px;
 }
 
 .item-container > div.docs {
-    background-color: rgb(0, 0, 0);
+    background-color: #023C45;
+    color: white;
     grid-area: docs;
     position: relative;
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 96px;
-    z-index: 10;
+    text-align: center;
+    width: 75px;
+    height: 75px;
 }
 
 .item-container > div.vids {
-    background-color: rgb(0, 0, 0);
+    background-color: #023C45;
+    color: white;
     grid-area: vids;
     position: relative;
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 96px;
-    z-index: 10;
+    text-align: center;
+    width: 75px;
+    height: 75px;
 }
 
 .item-container > div.pics {
-    background-color: rgb(0, 0, 0);
+    background-color: #023C45;
+    color: white;
     grid-area: pics;
     position: relative;
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 96px;
-    z-index: 10;
+    text-align: center;
+    width: 75px;
+    height: 75px;
 }
 
 .item-container > div.demo {
-    background-color: rgb(0, 0, 0);
+    background-color: #023C45;
+    color: white;
     grid-area: demo;
     position: relative;
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 96px;
-    z-index: 10;
+    text-align: center;
+    width: 75px;
+    height: 75px;
 }
 
 .mixed-project-container > div.updates {
-    background-color: rgb(199, 24, 24);
-    margin: 2px;
+    background-color: #defff7;
     grid-area: updates;
+    color: #defff7;
+    border: solid 2px #defff7;
+    border-radius: 5px;
 }
 
 .mixed-project-container > div.heading {
-    background-color: rgb(199, 24, 24);
-    margin: 2px;
+    background-color: #023C45;
+    /*margin: 2px;*/
     grid-area: heading;
 }
 
 .mixed-project-container > div.r-side {
-    background-color: rgb(199, 24, 24);
-    margin: 2px;
+    background-color: #023C45;
+    /*margin: 2px;*/
     grid-area: r-side;
 }
 
+.mixed-project-container > div.l-side {
+    background-color: #023C45;
+    /*margin: 2px;*/
+    grid-area: l-side;
+}
+
+.mixed-project-container > div.m-side {
+    background-color: #023C45;
+    /*margin: 2px;*/
+    grid-area: m-side;
+}
+
+.mixed-project-container > div.a-side {
+    background-color: #023C45;
+    /*margin: 2px;*/
+    grid-area: a-side;
+}
+
 .mixed-project-container > div.blank {
-    background-color: rgb(199, 24, 24);
-    margin: 2px;
+    background-color: #023C45;
+    /*margin: 2px;*/
     grid-area: blank;
 }
 
 .mixed-project-container > div.project {
-    background-color: rgb(199, 24, 24);
-    margin: 2px;
+    background-color: #defff7;
+    color: #023C45;
+    margin: 5px;
     grid-area: project;
+    border: solid 6px #defff7;
+    border-radius: 5px;
+}
+
+.inner-description {
+    background-color: #ffffff;
+    border: solid 2px #023C45;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 153px;
+    width: 778px;
+}
+
+.menu-container {
+    color: black;
+}
+
+.icons {
+    padding-top: 8px;
+}
+
+.slider {
+    font-size: 400px;
+    position: relative;
+    z-index: 100;
 }
 
 /* for the words inside the pop-up squares */
 .inner-words {
     font-size: 12px;
     padding: 5px;
-    background-color: black;
-    width: 100px;
+    background-color: #023C45;
+    width: 75px;
     text-align: center;
+    cursor: pointer;
 }
 
 /* moving elements */
 #docs-div {
-    background-color: rgb(199, 24, 24);
+    background-color: #023C45;
     position: absolute;
-    width: 100px;
-    height: 96px;
-    z-index: 100;
+    width: 75px;
+    height: 75px;
 }
 
 #vids-div {
-    background-color: rgb(199, 24, 24);
+    background-color: #023C45;
     position: absolute;
-    width: 100px;
-    height: 96px;
-    z-index: 100;
+    width: 75px;
+    height: 75px;
 
 }
 
 #pics-div {
-    background-color: rgb(199, 24, 24);
+    background-color: #023C45;
     position: absolute;
-    width: 100px;
-    height: 96px;
-    z-index: 100;
+    width: 75px;
+    height: 75px;
 
 }
 
 #demo-div {
-    background-color: rgb(199, 24, 24);
+    background-color: #023C45;
     position: absolute;
-    width: 100px;
-    height: 96px;
-    z-index: 100;
+    width: 75px;
+    height: 75px;
+}
+
+#updates-title {
+    padding-left: 6px;
+    font-size: 22px;
+    color: #023C45;
+}
+
+#slider-button {
+    background-color: #023C45;
 }
