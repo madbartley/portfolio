@@ -1,9 +1,9 @@
 import '../styles/MixedProject.css'
+import SlideUp from '../components/SlideUp';
 
 import { useEffect, useRef, useState} from 'react';
 
-
-const PopUps = () => {
+const PopUps = (props) => {
 
     // creating useRef variables, initialized to null, that will be grabbed by assigning "ref = {variable-name}" in the divs in the return section of component
     const docs = useRef(null);
@@ -62,22 +62,24 @@ const PopUps = () => {
 
     // helper function to actually move the icon up
     function doTheMove(theRef) {
-        theRef.current.style.top = '-100px';
+        theRef.current.style.top = '-70px';
+        theRef.current.style.backgroundColor = 'rgba(255, 255, 255, 0)';
     }
 
     // helper function to actually move the icon back
     function doTheMoveBack(theRef) {
         theRef.current.style.top = '0px';
+        theRef.current.style.backgroundColor = 'rgba(2, 60, 69, 100)';
     }
 
 
     return (
         <div className="item-container">
         {/*The larger class element has a flex item inside it called docs-div that holds the actual moving stuff*/}
-            <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><h3>docs</h3></div><div className="inner-words">View my documentation</div></div>
-            <div className="vids" ref = {vids}><div id="vids-div" ref = {vidsElement}><h3>videos</h3></div><div className="inner-words">Browse videos related to this project</div></div>
-            <div className="pics" ref = {pics}><div id="pics-div" ref = {picsElement}><h3>pictures</h3></div><div className="inner-words">View my photo album</div></div>
-            <div className="demo" ref = {demo}><div id="demo-div" ref = {demoElement}><h3>demo</h3></div><div className="inner-words">Demo this project</div></div>
+            <div className="docs" ref = {docs}><div id="docs-div" ref = {docsElement}><img className="icons" src="../../src/assets/popup-icons/docs.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Docs for this project"} project={props.project} poptype={"documents"}/></div></div>
+            <div className="vids" ref = {vids}><div id="vids-div" ref = {vidsElement}><img className="icons" src="../../src/assets/popup-icons/videos.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Browse related videos"} project={props.project} poptype={"videos"}/></div></div>
+            <div className="pics" ref = {pics}><div id="pics-div" ref = {picsElement}><img className="icons" src="../../src/assets/popup-icons/photos.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"View photos"} project={props.project} poptype={"photos"}/></div></div>
+            <div className="demo" ref = {demo}><div id="demo-div" ref = {demoElement}><img className="icons" src="../../src/assets/popup-icons/demos.svg" height='65px'/></div><div className="inner-words"><SlideUp title={"Watch a demo"} project={props.project} poptype={"demo"}/></div></div>
             </div>
     )
 }

@@ -1,13 +1,10 @@
 import '../styles/MixedProject.css'
-import { useState, createContext } from "react";
 
-
-
-const Description = () => {
+const Description = (props) => {
 
     return (
-        <div>
-        <div id="project-title">Title</div><div id="description">This is where I will write about my project!</div>
+        <div className="inner-description">
+        <div id="project-title">README</div><div id="description">This is where I will write about my project!</div>
         </div>
     )
 }

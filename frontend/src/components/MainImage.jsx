@@ -1,12 +1,17 @@
 import '../styles/MixedProject.css'
-import { useState, createContext } from "react";
 
+const MainImage = (props) => {
+    const image = "../../src/assets/main-image-"
+    let name = props.project;
+    const dotjpg = ".jpg"
 
-const MainImage = () => {
+    let main_image = image+name+dotjpg;
 
     return (
         <div>
-        <div className="main-image"><h3>main image</h3></div>
+        <div className="main-image">
+            <img src={main_image} height='260' width='756'/>
+        </div>
         </div>
     )
 }

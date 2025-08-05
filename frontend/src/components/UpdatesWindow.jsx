@@ -4,7 +4,10 @@ import { render } from "react-dom";
 import axios from 'axios';
 import UpdatesCard from './UpdatesCard';
 
-function UpdatesWindow() {
+function UpdatesWindow(props) {
+
+  const projectName=props;
+
   const [data, setData] = useState([]);
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1);
@@ -48,10 +51,10 @@ function UpdatesWindow() {
       hasMore={hasMore}
       loader={<h4>loading...</h4>}
       height={550}
-      scrollThreshold={0.99}
+      scrollThreshold={0.1}
       endMessage={
         <p style={{ textAlign: 'center' }}>
-          <b>End</b>
+          <b>End for {props.project}</b>
         </p>
       }
     >
@@ -64,6 +67,7 @@ function UpdatesWindow() {
                 post = {item.post}
                 project = {item.project}
                 date = {item.date}
+                projectName={projectName}
                 />
                 </div>
           ))) : "Loading..."}

@@ -8,11 +8,13 @@ const TopNav = () => {
     
     return (
         <Navbar className = "nav" data-bs-theme="dark">
+          <Container><div id="madeline-logo"><img src='../../src/assets/mb-logo.svg' height='40'/><div id="madeline-email"> madeline.bartley@outlook.com</div></div></Container>
         <Container>
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/mixed-project">Profile</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/madeline-bartley/">LinkedIn</Nav.Link>
+            <Nav.Link href="https://github.com/madbartley">GitHub</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
