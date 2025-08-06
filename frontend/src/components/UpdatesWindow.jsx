@@ -4,9 +4,9 @@ import { render } from "react-dom";
 import axios from 'axios';
 import UpdatesCard from './UpdatesCard';
 
+const API_URL = import.meta.env.VITE_API_URL;
 
 function UpdatesWindow(props) {
-  const API_URL = import.meta.env.VITE_API_URL;
 
   const projectName=props;
 
