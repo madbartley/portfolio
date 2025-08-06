@@ -5,8 +5,7 @@ import './styles/App.css'
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home.jsx'
-import Profile from './pages/Profile.jsx'
-import MixedProject from './pages/MixedProject.jsx';
+import Projects from './pages/Projects.jsx';
 
 
 
@@ -18,8 +17,7 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path = "/" element = {<Home />} />
-            <Route path = "/profile" element = {<Profile />} />
-            <Route path = "/mixed-project" element = {<MixedProject />} />
+            <Route path = "/projects" element = {<Projects />} />
           </Routes>
         </BrowserRouter>
       </div>

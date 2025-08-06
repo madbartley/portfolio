@@ -35,12 +35,12 @@ function MixedProject() {
 
     // set state to LowPressure app
     function setRobo1() {
-        setProject("Coming soon");
+        setProject("Coming soon - robotics");
     }
 
     // set state to LowPressure app
     function setML1() {
-        setProject("Coming soon");
+        setProject("Coming soon - data science and ML");
     }
 
     return (
