@@ -16,8 +16,8 @@ function App() {
       <div>
       <BrowserRouter>
           <Routes>
-            <Route path = "https://madelinebartley.onrender.com/" element = {<Home />} />
-            <Route path = "https://madelinebartley.onrender.com/projects" element = {<Projects />} />
+            <Route path = "/" element = {<Home />} />
+            <Route path = "/projects" element = {<Projects />} />
           </Routes>
         </BrowserRouter>
       </div>

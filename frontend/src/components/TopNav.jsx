@@ -12,7 +12,7 @@ const TopNav = () => {
         <Container>
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="https://madelinebartley.onrender.com/projects">Profile</Nav.Link>
+            <Nav.Link to="/projects">Profile</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/madeline-bartley/">LinkedIn</Nav.Link>
             <Nav.Link href="https://github.com/madbartley">GitHub</Nav.Link>
           </Nav>
