@@ -17,7 +17,7 @@ function UpdatesWindow(props) {
   const fetchData = async () => {
     try {
       // store the response in variable "response"
-      const response = await axios(`http://127.0.0.1:8000/updates/?page=${page}`);
+      const response = await axios(`https://portfolio-0bic.onrender.com/updates/?page=${page}`);
       // set state with the new response data
       setNextPage(response.data.next);
       setData(data.concat(response.data.results));
