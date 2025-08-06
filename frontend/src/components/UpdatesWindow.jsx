@@ -4,7 +4,9 @@ import { render } from "react-dom";
 import axios from 'axios';
 import UpdatesCard from './UpdatesCard';
 
+
 function UpdatesWindow(props) {
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const projectName=props;
 
@@ -17,7 +19,7 @@ function UpdatesWindow(props) {
   const fetchData = async () => {
     try {
       // store the response in variable "response"
-      const response = await axios(`https://portfolio-0bic.onrender.com/updates/?page=${page}`);
+      const response = await axios(`${API_URL}?page=${page}`);
       // set state with the new response data
       setNextPage(response.data.next);
       setData(data.concat(response.data.results));
