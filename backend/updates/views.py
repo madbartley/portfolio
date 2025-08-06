@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from updates.models import Updates
-from updates.serializers import UpdatesSerializer
+from updates.models import Updates, Descriptions
+from updates.serializers import UpdatesSerializer, DescriptionsSerializer
 from rest_framework import renderers
 
 from rest_framework.decorators import api_view
@@ -26,6 +26,16 @@ class UpdatesViewSet(viewsets.ModelViewSet):
     """
     queryset = Updates.objects.all()
     serializer_class = UpdatesSerializer
+
+class DescriptionsViewSet(viewsets.ModelViewSet):
+    """
+    This ViewSet automatically provides `list`, `create`, `retrieve`,
+    `update` and `destroy` actions.
+
+    Additionally we also provide an extra `highlight` action.
+    """
+    queryset = Descriptions.objects.all()
+    serializer_class = DescriptionsSerializer
 
 
 class UpdatesHighlight(generics.GenericAPIView):
