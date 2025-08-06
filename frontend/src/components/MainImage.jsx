@@ -1,7 +1,7 @@
 import '../styles/MixedProject.css'
 
 const MainImage = (props) => {
-    const image = "../../src/assets/main-image-"
+    const image = "/main-image-"
     let name = props.project;
     const dotjpg = ".jpg"
 

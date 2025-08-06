@@ -51,7 +51,7 @@ function MixedProject() {
                     <Accordion.Header>About</Accordion.Header>
                     <Accordion.Body>
                     <div className="menu-container">
-                    <div className="project-list" onClick={setProfile}><img  className="lists" src="../../src/assets/profile.svg" width='18' /> Profile</div>
+                    <div className="project-list" onClick={setProfile}><img  className="lists" src="/profile.svg" width='18' /> Profile</div>
                     </div>
                     </Accordion.Body>
                 </Accordion.Item>
@@ -59,8 +59,8 @@ function MixedProject() {
                     <Accordion.Header>Web and mobile development</Accordion.Header>
                     <Accordion.Body>
                     <div className = "menu-container">
-                    <div className="project-list" onClick={setPortfolio}><img  className="lists" src="../../src/assets/web-dev.svg" width='20' /> Portfolio website</div>
-                    <div className="project-list" onClick={setLowPressure}><img  className="lists" src="../../src/assets/web-dev.svg" width='20' /> Low Pressure mobile app</div>
+                    <div className="project-list" onClick={setPortfolio}><img  className="lists" src="/web-dev.svg" width='20' /> Portfolio website</div>
+                    <div className="project-list" onClick={setLowPressure}><img  className="lists" src="/web-dev.svg" width='20' /> Low Pressure mobile app</div>
                     </div>
                     </Accordion.Body>
                 </Accordion.Item>
@@ -68,7 +68,7 @@ function MixedProject() {
                     <Accordion.Header>Robotics and embedded systems</Accordion.Header>
                     <Accordion.Body>
                     <div className = "menu-container">
-                    <div className="project-list" onClick={setRobo1}><img  className="lists" src="../../src/assets/robot.svg" width='30' /> Coming soon</div>
+                    <div className="project-list" onClick={setRobo1}><img  className="lists" src="/robot.svg" width='30' /> Coming soon</div>
                     </div>
                     </Accordion.Body>
                 </Accordion.Item>
@@ -76,7 +76,7 @@ function MixedProject() {
                     <Accordion.Header>Data science and machine learning</Accordion.Header>
                     <Accordion.Body>
                     <div className = "menu-container menu-container-last">
-                    <div className="project-list" onClick={setML1}><img className="lists" src="../../src/assets/data.svg" width='18' /> Coming soon</div>
+                    <div className="project-list" onClick={setML1}><img className="lists" src="/data.svg" width='18' /> Coming soon</div>
                     </div>
                     </Accordion.Body>
                 </Accordion.Item>

@@ -27,7 +27,7 @@ return (
             <div className = "top-scroll"><h3 id = "tagline">- web and mobile development - embedded systems - data science and machine learning - web and mobile development - embedded systems - data science and machine learning - web and mobile development - embedded systems - data science and machine learning </h3></div>
             <div className = "main-image"><div className = "welcome"></div></div>
             <Link to="/projects" id="decor"><div onMouseDown={doColor} onMouseUp={revertColor}>
-                <div className = "featured"><img src="../../src/assets/arrow.svg" width='35px'></img> get started</div>
+                <div className = "featured"><img src="/arrow.svg" width='35px'></img> get started</div>
             </div></Link>
             <div className = "bottom-scroll"><h1 id = "title">- Madeline Bartley - Madeline Bartley - Madeline Bartley</h1></div>
             <div className = "right"></div>

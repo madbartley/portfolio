@@ -8,28 +8,28 @@ const SlidingPanelContent = (props) => {
     if(poptype==="Documents") {
 
         return (
-            <div>Docs</div>
+            <div>Docs: Looks like this feature isn't quite ready! Check back later!</div>
 
     );
 
     } else if (poptype==="Videos") {
 
         return (
-            <div>Videos</div>
+            <div>Videos: Looks like this feature isn't quite ready! Check back later!</div>
 
     );
 
     } else if (poptype==="Photos") {
 
         return (
-            <div>Photos</div>
+            <div>Photos: Looks like this feature isn't quite ready! Check back later!</div>
 
     );
 
     } else if (poptype==="Demo") {
 
         return (
-            <div>Demo</div>
+            <div>Demo: Looks like this feature isn't quite ready! Check back later!</div>
 
     );
 
