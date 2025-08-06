@@ -1,0 +1,1 @@
+This is a website that I'm building to act as my portfolio. It will house some of my favorite projects and highlight some of the resources that each took, like progess updates, related photos and videos, and more. 
