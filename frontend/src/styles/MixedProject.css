@@ -16,7 +16,6 @@
 
 
 .mixed-project-container > div.menu-pop-out {
-    /*background-color: #023C45;*/
     grid-area: menu-pop-out;
     background-color: rgba(255,255,255,10%);
     border-color: #1b4f57;
@@ -31,10 +30,6 @@
     --bs-accordion-btn-color: #ffffff;
     --bs-accordion-active-color: #20E1B1;
     --bs-accordion-border-color: #1b4f57;
-    /* border-bottom-left-radius: 5px;
-    --bs-accordion-inner-border-radius: 5px;
-    --border-bottom-right-radius: 5px; 
-    --bs-border-radius: 5px;*/
     --bs-body-bg-color: #20e1b1;
     --bs-accordion-body-padding-y: 0px;
     --bs-accordion-body-padding-x: 0px;
@@ -277,8 +272,14 @@
 }
 
 #closer {
-    width: 15px;
-    font-size: 15px;
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    left: -25px;
 }
 
 #panel-title {
