@@ -15,4 +15,10 @@ router.register(r'descriptions', views.DescriptionsViewSet, basename='descriptio
 urlpatterns = [
     path('', include(router.urls)),
     path('', views.api_root),
+    path('users/', views.UserList.as_view()),
+    path('users/<int:pk>/', views.UserDetail.as_view()),
+]
+
+urlpatterns += [
+    path('api-auth/', include('rest_framework.urls')),
 ]
