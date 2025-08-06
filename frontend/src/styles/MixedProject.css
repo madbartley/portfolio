@@ -19,8 +19,26 @@
     /*background-color: #023C45;*/
     grid-area: menu-pop-out;
     background-color: rgba(255,255,255,10%);
+    border-color: #1b4f57;
     border-radius: 5px;
+}
 
+.menu-boot {
+    margin: 4px;
+    border-color: #20E1B1;
+    --bs-accordion-bg: #023c45;
+    --bs-accordion-active-bg: #0d2f35;
+    --bs-accordion-btn-color: #ffffff;
+    --bs-accordion-active-color: #20E1B1;
+    --bs-accordion-border-color: #1b4f57;
+    /* border-bottom-left-radius: 5px;
+    --bs-accordion-inner-border-radius: 5px;
+    --border-bottom-right-radius: 5px; 
+    --bs-border-radius: 5px;*/
+    --bs-body-bg-color: #20e1b1;
+    --bs-accordion-body-padding-y: 0px;
+    --bs-accordion-body-padding-x: 0px;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 2px rgba(79, 249, 220, 0.25);
 }
 
 .mixed-project-container > div.pop-ups {
@@ -169,7 +187,28 @@
 }
 
 .menu-container {
-    color: black;
+    background-color: #ffffff;
+    color: #023C45;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-container-last {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.lists {
+    position: relative;
+    bottom: 2px;
+}
+
+.project-list {
+    cursor: pointer;
 }
 
 .icons {
@@ -235,4 +274,24 @@
 
 #slider-button {
     background-color: #023C45;
+}
+
+#closer {
+    width: 15px;
+    font-size: 15px;
+}
+
+#panel-title {
+    text-align: right;
+    background-color: #1b4f57;
+    color: #20E1B1;
+}
+
+.slide-pane__header {
+  display: flex;
+  flex: 0 0 64px;
+  align-items: center;
+  background: #1b4f57 !important;
+  height: 64px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
