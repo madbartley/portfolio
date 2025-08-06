@@ -21,7 +21,7 @@ function UpdatesCard(props) {
 
         return(
             <div className="updates-container">
-                <div className="top-card"><img src="../../src/assets/mb-logo.svg" height='30px'></img>
+                <div className="top-card"><img src="/mb-logo.svg" height='30px'></img>
                 <div className='date'>{date}</div></div>
                 <div>{post}</div>
             </div>
