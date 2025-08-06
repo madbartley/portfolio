@@ -9,6 +9,14 @@ const API_URL = import.meta.env.VITE_API_URL;
 function UpdatesWindow(props) {
 
   const projectName=props;
+  const project_name = props.project;
+  let ending = " ";
+
+  if (project_name === "Coming soon - robotics" || project_name === "Coming soon - data science and ML" ) {
+    ending = "for now"
+  } else {
+    ending = " for " + project_name;
+  }
 
   const [data, setData] = useState([]);
   const [hasMore, setHasMore] = useState(true);
@@ -56,7 +64,7 @@ function UpdatesWindow(props) {
       scrollThreshold={0.1}
       endMessage={
         <p style={{ textAlign: 'center' }}>
-          <b>End for {props.project}</b>
+          <b>End {ending}</b>
         </p>
       }
     >
