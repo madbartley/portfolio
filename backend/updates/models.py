@@ -9,6 +9,11 @@ class Updates(models.Model):
   project = models.CharField(max_length=255)
   date = models.DateTimeField()
   highlighted = models.TextField(default="id")
+  language = models.CharField(default='text')
+  code = models.TextField()
+  style = models.CharField(default='friendly')
+  linenos = models.BooleanField(default=False)
+  title = models.CharField(blank=True)
 
   def save(self, *args, **kwargs):
     """
