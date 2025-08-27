@@ -6,7 +6,7 @@ import UpdatesCard from '../components/UpdatesCard';
 import TopNav from '../components/TopNav'
 import PopUps from '../components/PopUps';
 import MainImage from '../components/MainImage';
-import Description from '../components/Description';
+import ReadMeText from '../components/ReadMeText';
 import SlideUp from '../components/SlideUp';
 
 
@@ -84,7 +84,7 @@ function MixedProject() {
             </div>
             <div className="main-title">{project}</div>
             <div className="main-image"><MainImage project = {project}/></div>
-            <div className="project"><Description project = {project}/></div>
+            <div className="project"><ReadMeText project = {project}/></div>
             <div className="pop-ups"><PopUps project = {project}/></div>
             <div className="updates"><div className="inner-updates"><div id="updates-title">Related updates</div><UpdatesWindow project = {project}/></div></div>
             <div className="heading"><TopNav /></div>
