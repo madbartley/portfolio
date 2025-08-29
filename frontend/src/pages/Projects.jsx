@@ -76,7 +76,7 @@ function MixedProject() {
                     <Accordion.Header>Data science and machine learning</Accordion.Header>
                     <Accordion.Body>
                     <div className = "menu-container menu-container-last">
-                    <div className="project-list" onClick={setML1}><img className="lists" src="/data.svg" width='18' /> Coming soon</div>
+                    <div className="project-list" onClick={setML1}><img className="lists" src="/data.svg" width='18' /> Alaska earthquake data analysis</div>
                     </div>
                     </Accordion.Body>
                 </Accordion.Item>
