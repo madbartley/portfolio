@@ -40,7 +40,7 @@ function MixedProject() {
 
     // set state to LowPressure app
     function setML1() {
-        setProject("Coming soon - data science and ML");
+        setProject("Alaska earthquake data analysis");
     }
 
     return (
