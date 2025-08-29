@@ -11,7 +11,7 @@
         "a-side menu-pop-out m-side project l-side updates r-side"
         "blank blank blank blank blank blank blank";
     grid-template-columns: auto 250px auto 800px auto 425px auto;
-    grid-template-rows: 55px 60px 300px 75px 175px 100px; /*go back to make TopNav 55px height like the home page*/
+    grid-template-rows: 55px 60px 300px 75px 200px 75px; /*go back to make TopNav 55px height like the home page*/
 }
 
 
@@ -177,7 +177,7 @@
     border-radius: 5px;
     padding: 5px;
     padding-left: 10px;
-    height: 171px;
+    height: 194px;
     width: 796px;
 }
 
