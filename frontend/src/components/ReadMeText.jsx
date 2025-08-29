@@ -12,7 +12,7 @@ const ReadMeText = (props) => {
     : (props.project === "Portfolio website") ? project_descr = Descriptions.Portfolio
     : (props.project === "Low Pressure mobile app") ? project_descr = Descriptions.Mobile
     : (props.project === "Coming soon - robotics") ? project_descr = Descriptions.Robotics
-    : (props.project === "Coming soon - data science and ML") ? project_descr = Descriptions.Dsml
+    : (props.project === "Alaska earthquake data analysis") ? project_descr = Descriptions.Dsml
     : project_descr = "No project description yet."
 
     return (
